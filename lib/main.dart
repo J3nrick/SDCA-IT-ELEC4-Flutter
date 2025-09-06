@@ -9,14 +9,20 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 Scaffold homepage = Scaffold(
-  appBar: AppBar(title: Text('Homepage'))
+  appBar: AppBar(title: Text('Sir tapos na po')),
+  floatingActionButton: FloatingActionButton(
+    onPressed: (){
+
+    },
+    child: const Icon(Icons.add)
+),
 );
 
     return MaterialApp(
       home: homepage,
       theme: ThemeData(
         appBarTheme:AppBarTheme(
-          backgroundColor: Colors.deepOrangeAccent,
+          backgroundColor: const Color.fromARGB(255, 223, 99, 181),
       foregroundColor: Colors.white))
     );
   }
